@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: EdgeInsets.zero,
             children: <Widget>[
             DrawerHeader(
-                child: Text('Drawer Header'),
+                child: Text('Probando Drawer'),
                 decoration: BoxDecoration(
                 color: Colors.blue,
                 ),
