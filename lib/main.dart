@@ -41,8 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
+
+    const drawerHeader = UserAccountsDrawerHeader(
+      accountName: Text('TOW3R'), 
+      accountEmail: Text('tow3r@gmail.com'));
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -52,12 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Important: Remove any padding from the ListView.
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            child: Text('Probando Drawer'),
-            decoration: BoxDecoration(
-              color: Colors.red,
-            ),
-          ),
+          drawerHeader,
           ListTile(
             title: Text('Item 1'),
             onTap: () {},
