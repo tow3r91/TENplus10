@@ -4,8 +4,12 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
 
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);  
+  MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -44,30 +48,26 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       drawer: Drawer(
-            child: ListView(
-            // Important: Remove any padding from the ListView.
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-            DrawerHeader(
-                child: Text('Probando Drawer'),
-                decoration: BoxDecoration(
-                color: Colors.red,
-                ),
+          child: ListView(
+        // Important: Remove any padding from the ListView.
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            child: Text('Probando Drawer'),
+            decoration: BoxDecoration(
+              color: Colors.red,
             ),
-            ListTile(
-                title: Text('Item 1'),
-                onTap: () {
-
-                },
-            ),
-            ListTile(
-                title: Text('Item 2'),
-                onTap: () {
-                },
-            ),
-            ],
-        )
-      ),
+          ),
+          ListTile(
+            title: Text('Item 1'),
+            onTap: () {},
+          ),
+          ListTile(
+            title: Text('Item 2'),
+            onTap: () {},
+          ),
+        ],
+      )),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
