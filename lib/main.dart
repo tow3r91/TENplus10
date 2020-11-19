@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     final drawerHeader = UserAccountsDrawerHeader(
       decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/drawHeader.png'))),
+      currentAccountPicture: CircleAvatar(backgroundImage: AssetImage('assets/images/appIconColor.png'), backgroundColor: Colors.white),
       accountName: Text('TOW3R'), 
       accountEmail: Text('tow3r@gmail.com'))
       ;
