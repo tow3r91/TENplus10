@@ -46,9 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    const drawerHeader = UserAccountsDrawerHeader(
+    final drawerHeader = UserAccountsDrawerHeader(
+      decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/drawHeader.png'))),
       accountName: Text('TOW3R'), 
-      accountEmail: Text('tow3r@gmail.com'));
+      accountEmail: Text('tow3r@gmail.com'))
+      ;
 
     return Scaffold(
       appBar: AppBar(
