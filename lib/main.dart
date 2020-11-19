@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     final drawerHeader = UserAccountsDrawerHeader(
-      decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/drawHeader.png'))),
+      decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/drawHeader.png'))),
       accountName: Text('TOW3R'), 
       accountEmail: Text('tow3r@gmail.com'))
       ;
