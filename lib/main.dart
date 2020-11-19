@@ -64,11 +64,15 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           drawerHeader,
           ListTile(
-            title: Text('Item 1'),
+            leading: Icon(Icons.home),
+            title: Text('Inicio'),
+            selectedTileColor: Colors.redAccent,
+            selected: true,
             onTap: () {},
           ),
           ListTile(
-            title: Text('Item 2'),
+            leading: Icon(Icons.credit_card),
+            title: Text('Mis tarjetas'),
             onTap: () {},
           ),
         ],
