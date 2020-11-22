@@ -41,17 +41,17 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
-
     final drawerHeader = UserAccountsDrawerHeader(
-      decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/images/drawHeader.png'))),
-      currentAccountPicture: CircleAvatar(backgroundImage: AssetImage('assets/images/appIconColor.png'), backgroundColor: Colors.white),
-      accountName: Text('TOW3R'), 
-      accountEmail: Text('tow3r@gmail.com'))
-      ;
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/drawHeader.png'))),
+        currentAccountPicture: CircleAvatar(
+            backgroundImage: AssetImage('assets/images/appIconColor.png'),
+            backgroundColor: Colors.white),
+        accountName: Text('TOW3R'),
+        accountEmail: Text('tow3r@gmail.com'));
 
     return Scaffold(
       appBar: AppBar(
@@ -66,7 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: Icon(Icons.home),
             title: Text('Inicio'),
-            selectedTileColor: Colors.redAccent,
             selected: true,
             onTap: () {},
           ),
